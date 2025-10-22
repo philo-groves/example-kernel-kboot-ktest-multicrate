@@ -1,5 +1,4 @@
-//! A simple kernel that prints "Hello World!" to the serial port and 
-//! exits QEMU.
+//! A simple bare-bones kernel.
 //! 
 //! A main.rs is file required because the `bootloader` will look for a binary crate.
 
@@ -14,7 +13,7 @@
 // `boot_info` argument provides information about the boot process and system.
 //
 // The `build.rs` script will scan for this macro to find the kernel crate.
-bootloader_api::entry_point!(kernel_main, config = &kernel_core::BOOTLOADER_CONFIG);
+bootloader_api::entry_point!(kernel_main);
 
 /// Entry point for the kernel after the bootloader. This function is called 
 /// by the bootloader with a reference to the inflated `BootInfo` structure.

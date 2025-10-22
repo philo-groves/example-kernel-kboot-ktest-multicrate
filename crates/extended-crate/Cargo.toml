@@ -1,0 +1,11 @@
+[package]
+name = "extended-crate"
+version = "0.1.0"
+edition = "2024"
+
+[dev-dependencies]
+ktest = { version = "0.1.4", features = ["allocator"] } # for kernel testing framework
+bootloader_api = { workspace = true } # for bootloader support and its structures
+
+[lib]
+doctest = false # disable doctests and their log outputs (we have no doctests)

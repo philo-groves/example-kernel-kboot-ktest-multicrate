@@ -2,9 +2,9 @@
 resolver = "3"
 members = [
     "crates/core",
-    "crates/another-crate"
+    "crates/basic-crate",
+    "crates/extended-crate"
 ]
 
 [workspace.dependencies]
-ktest = "0.1.3"            # for kernel testing framework
 bootloader_api = "0.11.12" # for bootloader support and its structures

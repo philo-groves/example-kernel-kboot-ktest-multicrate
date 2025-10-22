@@ -24,9 +24,13 @@ cargo run
 
 This kernel is also configured for testing in a containerized QEMU environment with the standard `test` command:
 
+You may need to install cargo-hack: `cargo install cargo-hack`
+
 ```
-cargo test
+cargo hack test --workspace
 ```
+
+The `hack` and `--workspace` options will ensure each crate is tested individually, preventing issues with unnecessary feature unification. For example, without these options, enabling the test-only allocator in one crate would enable it for all crates in the workspace; this is not desired as the allocator should only be included if needed.
 
 ## Accessing the Kernel
 
