@@ -95,9 +95,7 @@ dependencies = [
 
 [[package]]
 name = "ktest"
-version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f04eb70013d5b242daa056d17705fd8925b340e5c140e7f7df47b6402142c101"
+version = "0.1.5"
 dependencies = [
  "bootloader_api",
  "conquer-once",

@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dev-dependencies]
-ktest = "0.1.4"                       # for kernel testing framework
+ktest = "0.1.5"                       # for kernel testing framework
 bootloader_api = { workspace = true } # for bootloader support and its structures
 
 [lib]

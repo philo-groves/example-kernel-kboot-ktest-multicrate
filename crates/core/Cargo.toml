@@ -10,7 +10,7 @@ uart_16550 = "0.4.0"                  # for serial port communication
 x86_64 = "0.15.2"                     # for x86_64 architecture specific functions and structures
 
 [dev-dependencies]
-ktest = "0.1.4" # for kernel testing framework
+ktest = "0.1.5" # for kernel testing framework
 
 [lib]
 doctest = false # disable doctests and their log outputs (we have no doctests)
