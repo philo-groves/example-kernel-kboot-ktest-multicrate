@@ -12,6 +12,12 @@
 #[cfg(test)]
 ktest::klib!("library");
 
+mod serial;
+
+pub fn init() {
+    serial_info_ln!("Hello kernel!");
+}
+
 #[cfg(not(test))]
 #[panic_handler]
 fn panic(_info: &core::panic::PanicInfo) -> ! {

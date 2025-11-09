@@ -20,7 +20,7 @@ bootloader_api::entry_point!(kernel_main);
 /// 
 /// This function is supplied to the `bootloader::entry_point!` macro.
 fn kernel_main(_boot_info: &'static mut bootloader_api::BootInfo) -> ! {
-    // any kernel init can happen here
+    kernel_core::init();
 
     // run tests if we are in test mode
     #[cfg(test)]

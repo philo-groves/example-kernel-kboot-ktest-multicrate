@@ -8,6 +8,8 @@ bootloader_api = { workspace = true } # for bootloader support and its structure
 linked_list_allocator = "0.10.5"      # for heap allocation
 uart_16550 = "0.4.0"                  # for serial port communication
 x86_64 = "0.15.2"                     # for x86_64 architecture specific functions and structures
+spin = "0.5.2"                        # for synchronization primitives in no_std environments
+lazy_static = { version = "1.0", features = ["spin_no_std"] } # for lazy static initialization without std
 
 [dev-dependencies]
 ktest = "0.1.5" # for kernel testing framework
